@@ -8,10 +8,18 @@ import Chat from './screens/Chat'
 const Stack = createStackNavigator();
 
 function ChatStack() {
-    reurn(
+    return(
         <Stack.Navigator>
             <Stack.Screen name="Chat" component={Chat} />
         </Stack.Navigator>
+    )
+}
+
+function RootNavigator() {
+    return (
+        <NavigationContainer>
+            <ChatStack />
+        </NavigationContainer>
     )
 }
 
