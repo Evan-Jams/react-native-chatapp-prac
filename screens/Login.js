@@ -46,4 +46,25 @@ const styles = StyleSheet.create({
         top: 0,
         resizeMode: 'cover',
     },
+    whiteSheet: {
+        width: '100%',
+        height: '75%',
+        position: 'absolute',
+        bottom: 0,
+        backgroundColor: '#fff',
+        borderTopLeftRadius: 60
+    },
+    form: {
+        flex: 1,
+        justifyContent: 'center',
+        marginHorizontal: 30
+    },
+    button: {
+        backgroundColor: '#f57c00',
+        height: 58,
+        borderRadius: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 40
+    }
 })
