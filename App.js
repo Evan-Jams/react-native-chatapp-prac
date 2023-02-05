@@ -4,13 +4,15 @@ import { createStackNavigator } from '@react-navigation/stack'
 import { StyleSheet, Text, View } from 'react-native';
 
 import Chat from './screens/Chat'
+import Login from './screens/Login'
 
 const Stack = createStackNavigator();
 
 function ChatStack() {
     return(
-        <Stack.Navigator>
-            <Stack.Screen name="Chat" component={Chat} />
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+            {/* <Stack.Screen name="Chat" component={Chat} /> */}
+            <Stack.Screen name="Login" component={Login} />
         </Stack.Navigator>
     )
 }
